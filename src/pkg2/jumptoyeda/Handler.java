@@ -36,8 +36,8 @@ public class Handler {
          
      BufferedImageLoader loader = new BufferedImageLoader();
 
-     level = loader.loadImage("/level.png");
-     level2 = loader.loadImage("/level2.png");
+     level = loader.loadImage("/res/level.png");
+     level2 = loader.loadImage("/res/level2.png");
     }
     
     public void tick(){

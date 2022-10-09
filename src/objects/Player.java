@@ -26,7 +26,7 @@ import pkg2.jumptoyeda.Handler;
  */
 public class Player extends GameObject {
 
-    AudioClip shot = new AudioClip(new File("res\\shot.mp3").toURI().toString());
+    AudioClip shot = new AudioClip(getClass().getResource("/res/shot.mp3").toString());
     
     private float width = 55, height = 75;
     //private float xx = 55, yy = 75;

@@ -24,8 +24,8 @@ public class KeyInput extends KeyAdapter {
     private boolean[] keyDown = new boolean[6];
     
     private int i = 0;
-AudioClip plonkSound = new AudioClip(new File("res\\jump.mp3").toURI().toString());
-        AudioClip shoot = new AudioClip(new File("res\\shoot.mp3").toURI().toString());
+AudioClip plonkSound = new AudioClip(getClass().getResource("/res/jump.mp3").toString());
+        AudioClip shoot = new AudioClip(getClass().getResource("/res/shoot.mp3").toString());
         
     Handler handler;
 

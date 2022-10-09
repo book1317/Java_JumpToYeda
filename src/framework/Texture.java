@@ -30,10 +30,10 @@ public class Texture {
         BufferedImageLoader loader = new BufferedImageLoader();
         
         try{
-            block_sheet = loader.loadImage("/block_sheet.png");
-            player_sheet = loader.loadImage("/player_sheet.png");
-            player2_sheet = loader.loadImage("/player2_sheet.png");
-            bullet = loader.loadImage("/bullet.png");
+            block_sheet = loader.loadImage("/res/block_sheet.png");
+            player_sheet = loader.loadImage("/res/player_sheet.png");
+            player2_sheet = loader.loadImage("/res/player2_sheet.png");
+            bullet = loader.loadImage("/res/bullet.png");
         }catch(Exception e){
             e.printStackTrace();
         }

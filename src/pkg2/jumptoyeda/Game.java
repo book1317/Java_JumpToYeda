@@ -48,7 +48,7 @@ public class Game extends Canvas implements Runnable{
    
    public static int WIDTH,HEIGHT;
    
-   public BufferedImage level,level2,level3,bg1,start,map1,bullet,map2,end = null;
+   public BufferedImage level,level2,level3,bg1,map1,bullet,map2,end = null;
    public static int LEVEL = 0;
   
    private Menu menu;
@@ -80,23 +80,22 @@ public class Game extends Canvas implements Runnable{
       
      BufferedImageLoader loader = new BufferedImageLoader();
      
-      bullet = loader.loadImage("/bullet.png");
-     level = loader.loadImage("/level.png");
-     level2 = loader.loadImage("/level2.png");
-     bg1 = loader.loadImage("/bg1.png");
-     map2 = loader.loadImage("/map2.png");
-     map1 = loader.loadImage("/map1.png");
-     start = loader.loadImage("/start2.gif"); 
-     level3 = loader.loadImage("/level3.png");
-        end = loader.loadImage("/end.png");
+      bullet = loader.loadImage("/res/bullet.png");
+     level = loader.loadImage("/res/level.png");
+     level2 = loader.loadImage("/res/level2.png");
+     bg1 = loader.loadImage("/res/bg1.png");
+     map2 = loader.loadImage("/res/map2.png");
+     map1 = loader.loadImage("/res/map1.png");
+     level3 = loader.loadImage("/res/level3.png");
+        end = loader.loadImage("/res/end.png");
         
       handler = new Handler();
       menu = new Menu(this,handler);
       
-       URL url = this.getClass().getResource("/start.gif");
+       URL url = this.getClass().getResource("/res/start.gif");
          image = new ImageIcon(url).getImage();
       
-     AudioClip plonkSound = new AudioClip(new File("res\\air.mp3").toURI().toString());
+     AudioClip plonkSound = new AudioClip(getClass().getResource("/res/air.mp3").toString());
        
        
       if(gameState == STATE.Game)
